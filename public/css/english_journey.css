@@ -1,0 +1,173 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Căn chỉnh trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.site-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+h2 {
+    color: #34495e;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Biểu đồ */
+#studyDurationChart {
+    max-width: 100%;
+    margin: 0 auto 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Nút quay lại */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d;
+    
+}
+
+.btn-secondary:hover {
+    background-color: #6c7a89;
+}
+
+/* Phần chi tiết hành trình */
+p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Đặt chi tiết thành một khung riêng */
+.english-journey-details {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.english-journey-details p:first-child {
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Đặt khoảng cách hợp lý giữa các mục */
+.english-journey-details p:last-child {
+    margin-bottom: 10px;
+}
+
+/* Phong cách cho form lọc ngày */
+#dateFilterForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#dateFilterForm label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+#dateFilterForm input[type="date"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#dateFilterForm input[type="date"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+#dateFilterForm button[type="submit"] {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dateFilterForm button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Định dạng màu cho các thẻ h1 và h2 */
+h1 {
+    color: #4A90E2; /* Màu xanh dương nhạt */
+}
+
+h2 {
+    color: #D0021B; /* Màu đỏ */
+}
+
+/* Mảng màu cho các thẻ strong */
+.color-0 { color: #F5A623; } /* Màu cam */
+.color-1 { color: #7ED321; } /* Màu xanh lá */
+.color-2 { color: #9013FE; } /* Màu tím */
+.color-3 { color: #F39C12; } /* Màu vàng */
+.color-4 { color: #E74C3C; } /* Màu đỏ */
+/* Bạn có thể thêm nhiều màu sắc khác nếu cần */

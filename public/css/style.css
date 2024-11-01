@@ -1,0 +1,125 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Căn chỉnh trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.site-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+h1 {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Form styling */
+form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Button colors */
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.btn-info {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #df2e2e;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #2ecc71; /* Màu xanh lá cây */
+    color: #fff;
+}
+
+
+.btn-sm {
+    font-size: 12px;
+}
+
+/* Các đoạn văn bản nhật ký */
+p {
+    font-size: 15px;
+    color: #555;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Empty message styling */
+p:last-child {
+    font-style: italic;
+    color: #888;
+}
+
+h1 {
+    color: #4A90E2; /* Màu xanh dương nhạt */
+    text-align: center; /* Căn giữa */
+    margin-bottom: 20px; /* Khoảng cách bên dưới */
+}
+
+h2 {
+    border-bottom: 2px solid; /* Đường viền dưới */
+    padding-bottom: 5px; /* Khoảng cách bên dưới */
+    margin-top: 30px; /* Khoảng cách bên trên */
+    margin-bottom: 10px; /* Khoảng cách bên dưới */
+}
+
+/* Màu sắc riêng cho từng h2 */
+.today {
+    color: #D0021B; /* Màu đỏ */
+}
+
+.future {
+    color: #F5A623; /* Màu cam */
+}
+
+.past {
+    color: #7ED321; /* Màu xanh lá cây */
+}

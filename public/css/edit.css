@@ -1,0 +1,154 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Căn chỉnh trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.site-container {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style cho các label và input */
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="datetime-local"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Style cho button */
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Quay lại button */
+.btn-secondary {
+    background-color: #7f8c8d;
+}
+
+.btn-secondary:hover {
+    background-color: #6c7a89;
+}
+
+/* .btn-sm {
+    font-size: 12px;
+    padding: 8px;
+    width: auto;
+} */
+
+/* Phần chi tiết học tiếng Anh */
+#english_details {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+#english_details label {
+    font-size: 13px;
+    color: #555;
+}
+
+/* Style cho các phần lựa chọn và ô nhập lý do */
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+
+h1 {
+    color: #E94E77; /* Màu hồng */
+    text-align: center; /* Căn giữa */
+    margin-bottom: 20px; /* Khoảng cách bên dưới */
+}
+
+label {
+    display: block; /* Căn chỉnh label thành dòng mới */
+    margin-top: 10px; /* Khoảng cách phía trên */
+    margin-bottom: 5px; /* Khoảng cách phía dưới */
+}
+
+/* Màu sắc riêng cho từng label */
+#date-label {
+    color: #D50000; /* Màu đỏ đậm */
+}
+
+#content-label {
+    color: #FF6F00; /* Màu cam đậm */
+}
+
+#tasks_tomorrow-label {
+    color: #3E8E41; /* Màu xanh lá cây đậm */
+}
+
+#future_plans-label {
+    color: #007BFF; /* Màu xanh dương */
+}
+
+#learned_english-label {
+    color: #6610F2; /* Màu tím đậm */
+}
+
+#reason_not_study-label {
+    color: #FFC107; /* Màu vàng */
+}
+
+#remedial_action-label {
+    color: #28A745; /* Màu xanh lá cây sáng */
+}
