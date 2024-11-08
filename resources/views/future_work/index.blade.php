@@ -10,29 +10,38 @@
     <div class="task-container">
         <h1>Danh Sách Công Việc Tương Lai</h1>
 
+        <!-- Phải làm -->
         <div class="task-item">
             <div class="task-label must-do">Phải làm:</div>
             <ul class="task-content">
-                @foreach(explode("\n", $futureWorkTask->must_do) as $task)
-                    <li>{{ $task }}</li>
+                @foreach(explode("\n", $futureWorkTask->must_do ?? '') as $task)
+                    @if(trim($task)) <!-- Kiểm tra nếu task không rỗng -->
+                        <li>{{ $task }}</li>
+                    @endif
                 @endforeach
             </ul>
         </div>
 
+        <!-- Muốn làm -->
         <div class="task-item">
             <div class="task-label want-to-do">Muốn làm:</div>
             <ul class="task-content">
-                @foreach(explode("\n", $futureWorkTask->want_to_do) as $task)
-                    <li>{{ $task }}</li>
+                @foreach(explode("\n", $futureWorkTask->want_to_do ?? '') as $task)
+                    @if(trim($task)) <!-- Kiểm tra nếu task không rỗng -->
+                        <li>{{ $task }}</li>
+                    @endif
                 @endforeach
             </ul>
         </div>
 
+        <!-- Cần làm -->
         <div class="task-item">
             <div class="task-label need-to-do">Cần làm:</div>
             <ul class="task-content">
-                @foreach(explode("\n", $futureWorkTask->need_to_do) as $task)
-                    <li>{{ $task }}</li>
+                @foreach(explode("\n", $futureWorkTask->need_to_do ?? '') as $task)
+                    @if(trim($task)) <!-- Kiểm tra nếu task không rỗng -->
+                        <li>{{ $task }}</li>
+                    @endif
                 @endforeach
             </ul>
         </div>
