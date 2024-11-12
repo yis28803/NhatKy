@@ -17,7 +17,9 @@ class DailyTaskController extends Controller
     }
     
     public function store(Request $request) {
-        DailyTask::create($request->all());
+        $data = $request->all();
+        $data['task_date'] = now()->toDateString();
+        DailyTask::create($data);
         return redirect()->route('daily_tasks.index');
     }
     
