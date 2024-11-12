@@ -1,5 +1,5 @@
 /* Cài đặt chung cho trang */
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f8;
     color: #333;
@@ -9,6 +9,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+} */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .edit-task-container {

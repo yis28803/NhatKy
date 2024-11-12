@@ -9,6 +9,8 @@
 <body>
     <div class="task-container">
         <h1>Danh Sách Công Việc Tương Lai</h1>
+        
+        
 
         <!-- Phải làm -->
         <div class="task-item">
@@ -50,8 +52,15 @@
             <form action="{{ route('future_work.edit', $futureWorkTask->id) }}" method="GET" style="display:inline;">
                 <button type="submit" style="background-color: #4CAF50; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px;">Chỉnh sửa</button>
             </form>
+           
             <form action="{{ route('diary.index') }}" method="GET" style="display:inline;">
                 <button type="submit" style="background-color: #2196F3; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px;">Quay lại</button>
+            </form>
+            
+        </div>
+        <div class="task-actions">
+            <form action="{{ route('daily_tasks.index') }}" method="GET" style="display:inline;">
+                <button type="submit" style="background-color: #f0ad4e; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px;">Danh Sách Công Việc Hằng Ngày</button>
             </form>
         </div>
     </div>

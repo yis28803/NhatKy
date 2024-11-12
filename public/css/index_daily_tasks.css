@@ -1,0 +1,150 @@
+/* Đặt kiểu font tổng thể và màu nền */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.site-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    color: #9b59b6;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Căn hai form Thêm mới và Quay lại cùng một hàng */
+form {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary {
+    background-color: #28a745; /* Màu xanh lá */
+    color: #fff;
+}
+
+/* Nút "Quay lại" với màu xám */
+.btn-success {
+    background-color: #f06292; /* Màu xám */
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Giao diện bảng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #007FFF;
+    color: #fff;
+}
+
+
+
+
+/* Radio button Trạng thái */
+td input[type="radio"] {
+    margin-right: 5px;
+    transform: scale(1.2);
+}
+
+td label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 25px; /* Khoảng cách giữa các label */
+}
+
+/* Thao tác nút */
+td[style*="display: flex"] {
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.btn-warning {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #e53935;
+    color: #fff;
+}
+
+.btn-warning:hover, .btn-danger:hover {
+    opacity: 0.8;
+}
+
+/* Hàng bảng */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+
+/* Đặt khung bao cho bảng và cho phép cuộn ngang */
+.site-container {
+    overflow-x: auto; /* Cho phép cuộn ngang khi nội dung vượt quá khung */
+}
+
+table {
+    white-space: nowrap; /* Ngăn các nội dung trong ô bảng bị xuống dòng */
+    width: 100%;
+}
+
+th, td {
+    white-space: nowrap; /* Ngăn xuống dòng cho từng ô */
+}
